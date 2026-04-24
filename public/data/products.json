@@ -1,0 +1,31 @@
+{
+  "products": [
+    {
+      "id": "p-1",
+      "name": "Temple Gold Choker",
+      "category": "Jewellery",
+      "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuBrdLUna85P8ze-yk8K7ep5PaC5BiNMRrE3yC0E-LM53JgXszD-gJ7X7oRJOz_D4keJS8QYPqW4c7f2uz66ib9WtmqhT82pdWiXkqzCuu5tZIgYUciMqPgfaAdFHfAGgDc7dO28OExAsgBXflHPYDVU6N0UZ6tLsl_vNJKcUyNO2oG0MSr6FgS8YsFvSJIsS0iFBPW0nD0ERCYSvSX18yRpHJOhyvMjmmg-_dtC-3IWSQYh-FTxQraCvsIVfftIIh2RpIwwwcni5tPs",
+      "priceLabel": "INR 6,500",
+      "isNewArrival": true,
+      "isOnSale": false
+    },
+    {
+      "id": "p-2",
+      "name": "Kanchipuram Bridal Saree",
+      "category": "Sarees",
+      "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuDSINIcf1tOODiSdJo3K7rInObrcQka9_Po4G7UXnM3pSaQ3j-ByOALUxenBidgTnD0-hMNDPQgrt06Egk5CqXSq7lEM-BqbjmBTRo50VX3-u5uZ1vTPeoM_CryYSyN4DqI98MYbg5Ctzszs8MBCOT_CZQNMmPV5_3PYd6XROgy_Mt5DsgStzP6sQq92sXQEQHr3GTCv_wYBbo7vxy4FhzEcllVxca8qac4P05aCBxoteqOdE7neZBo6ZhVADjAXO9_unQD4noaD8Fh",
+      "priceLabel": "INR 18,900",
+      "isNewArrival": true,
+      "isOnSale": true
+    },
+    {
+      "id": "p-3",
+      "name": "Embroidered Anarkali Set",
+      "category": "Dresses",
+      "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuDMO4kC0s6Szi5EyAnDcPTyXIY14zDpdWxHXNxECxrmruHIRjz6lpTURB2A8EHC3leFqrt--8EShirdNiN6OycYu00H5c-aB5utxDp0tvDQBAVR-epoklUxGcNgp2Jxk-Ceq-zuYWeM85V0XKNxOMedIVVjfXdZJVeJ39U7zTifWUyOYsAECVCp7kjJaFF3ZsKG-wz5LvrPuayRe9is9aGWlOLobDGRXoZsYj0H6cLvx0mKoAyzLRdn27WnGhNBFrbX4wdyYH9t6",
+      "priceLabel": "INR 4,950",
+      "isNewArrival": false,
+      "isOnSale": true
+    }
+  ]
+}

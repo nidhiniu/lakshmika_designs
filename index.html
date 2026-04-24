@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- SEO -->
+    <title>Lakshmika Designs — Jewellery, Sarees & Fashion</title>
+    <meta name="description" content="Handpicked jewellery, pure silk sarees and women's fashion. Order on WhatsApp. Lakshmika Designs — quiet luxury, curated for the modern woman." />
+    <meta name="keywords" content="jewellery, sarees, silk sarees, gold jewellery, women fashion, Kerala, online shopping, WhatsApp order" />
+    <!-- Open Graph for WhatsApp / Instagram link previews -->
+    <meta property="og:title" content="Lakshmika Designs" />
+    <meta property="og:description" content="Jewellery, Sarees & Fashion — curated for the modern woman." />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="/og-image.jpg" />
+  </head>
+  <body>
+    <div id="root"></div>
+    <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+    <script>
+      if (window.netlifyIdentity) {
+        window.netlifyIdentity.on("init", (user) => {
+          if (!user) {
+            window.netlifyIdentity.on("login", () => {
+              document.location.href = "/admin/index.html";
+            });
+          }
+        });
+      }
+    </script>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>

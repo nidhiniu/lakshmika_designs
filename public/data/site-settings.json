@@ -1,0 +1,28 @@
+{
+  "brand": {
+    "name": "Lakshmika",
+    "tagline": "Designs",
+    "whatsappNumber": "919876543210",
+    "instagramHandle": "lakshmika.designs",
+    "email": "hello@lakshmika.in"
+  },
+  "hero": {
+    "badge": "A Boutique of Timeless Elegance",
+    "headline1": "Elegance",
+    "headline2": "Worn Beautifully",
+    "subtext": "Jewellery, fashion & style curated for you — handpicked pieces that celebrate the modern woman with quiet luxury and grace.",
+    "backgroundImage": "https://lh3.googleusercontent.com/aida/ADBb0uhM9tL_l9fYu0CYXMF_wq5pD6TUYcPeRIYnSrWRo0kUmad4PGlOttEkEPp2hKzSHij4LWPudOZz-oul25E8_0uBmkKcdl4v1LCWHgdLRs4_ct4ukeVGbMaRneL9J-BJ3Sp9zEq50c7tysUtIXwg3CwZCPcvfdj-qNFN0mKPqrWAaWYlMrkapT0EG2v51o0IFu2QWM566KNkF4mdQRmyE0Bshcpgks9u7tAsQ_sHh3-R-KPZivDaYRQIQnZiP8NDX5WKxiXn3Ultsd8"
+  },
+  "story": {
+    "title1": "Crafted with Heart,",
+    "title2": "Worn with Grace",
+    "body": "At Lakshmika Designs, we believe every piece tells a story. We source materials from heritage clusters, supporting local artisans while ensuring every stitch and setting meets our standard of luminous excellence.",
+    "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuDgENkAqyRVXeJn8Y1_4AKuUPqntDN-fHOgmJexSdP-L8juzXxSCW5cVmKf0hRZX87r6Ib6Dz5v-DG5Q2cxzo5OFx9ctIHohioM-yrJL2tn0dSCQQmpbQyE7eMCmWikfTpKFxZI8hbPKwyDXrzuesKj0zDXU4dT2-iOlm-V7rssgoeYH_1qIXV9YReLDyGLAncSUZE2U8iLB2_Al1N5kHBqq88DE1GPEzUeQheaPuve4XuGkJwFXipZ5YnQNAGsn9cgzKlNQfWSZXOR",
+    "imageAlt": "Craftsmanship"
+  },
+  "about": {
+    "intro": "Lakshmika Designs is a boutique destination for jewellery, sarees, and dresses designed for elegant everyday wear and special celebrations.",
+    "body": "At Lakshmika Designs, we believe every piece tells a story. We source materials from heritage clusters, supporting local artisans while ensuring every stitch and setting meets our standard of luminous excellence.",
+    "outro": "We work closely with trusted makers and weavers, and every product is selected for quality, comfort, and timeless style."
+  }
+}
