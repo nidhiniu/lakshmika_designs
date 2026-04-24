@@ -1,17 +1,46 @@
+import { useEffect, useMemo, useState } from "react";
 import { brand as defaultBrand, hero as defaultHero } from "../data/siteContent";
+import heroSlide1 from "../../pexels-galt-couture-2159829575-36536856.jpg";
+import heroSlide2 from "../../pexels-kunal-lakhotia-781256899-32988532.jpg";
+import heroSlide3 from "../../pexels-skgphotography-19955775.jpg";
 
 export default function Hero({ brand = defaultBrand, hero = defaultHero }) {
+  const [activeSlide, setActiveSlide] = useState(0);
   const whatsappUrl = `https://wa.me/${brand.whatsappNumber}?text=Hi%20Lakshmika%20Designs!%20I%20am%20interested%20in%20your%20collection.`;
+  const slides = useMemo(() => {
+    const cmsSlides = Array.isArray(hero.backgroundImages)
+      ? hero.backgroundImages.filter(Boolean)
+      : [];
+
+    if (cmsSlides.length > 0) {
+      return cmsSlides;
+    }
+
+    return [heroSlide1, heroSlide2, heroSlide3];
+  }, [hero.backgroundImages]);
+
+  useEffect(() => {
+    const intervalId = window.setInterval(() => {
+      setActiveSlide((prev) => (prev + 1) % slides.length);
+    }, 4000);
+
+    return () => window.clearInterval(intervalId);
+  }, [slides.length]);
 
   return (
     <header className="relative min-h-screen flex flex-col justify-end overflow-hidden">
       {/* Background image */}
       <div className="absolute inset-0 z-0">
-        <img
-          src={hero.backgroundImage}
-          alt="Elegant Jewelry and Fashion"
-          className="w-full h-full object-cover"
-        />
+        {slides.map((slide, index) => (
+          <img
+            key={slide}
+            src={slide}
+            alt="Elegant Jewelry and Fashion"
+            className={`absolute inset-0 w-full h-full object-cover transition-opacity duration-1000 ${
+              index === activeSlide ? "opacity-100" : "opacity-0"
+            }`}
+          />
+        ))}
         {/* gradient overlay */}
         <div
           className="absolute inset-0"
@@ -84,6 +113,20 @@ export default function Hero({ brand = defaultBrand, hero = defaultHero }) {
           Scroll
         </span>
         <div className="w-px h-12 bg-[#2D2926] animate-pulse" />
+      </div>
+
+      <div className="absolute bottom-8 left-1/2 -translate-x-1/2 z-10 flex items-center gap-2">
+        {slides.map((slide, index) => (
+          <button
+            key={slide}
+            type="button"
+            onClick={() => setActiveSlide(index)}
+            aria-label={`Show slide ${index + 1}`}
+            className={`h-2.5 rounded-full transition-all ${
+              index === activeSlide ? "w-8 bg-[#2D2926]" : "w-2.5 bg-[#2D2926]/40"
+            }`}
+          />
+        ))}
       </div>
     </header>
   );
