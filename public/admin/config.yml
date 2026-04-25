@@ -36,7 +36,7 @@ collections:
                 name: "category"
                 widget: "select"
                 options: ["Jewellery", "Sarees", "Dresses"]
-              - { label: "Image URL", name: "image", widget: "string" }
+              - { label: "Product Image", name: "image", widget: "image" }
               - { label: "Price Label", name: "priceLabel", widget: "string", required: false }
               - { label: "Show in New Arrivals", name: "isNewArrival", widget: "boolean", default: false }
               - { label: "Show in Offers / Sale", name: "isOnSale", widget: "boolean", default: false }
@@ -64,7 +64,7 @@ collections:
               - { label: "Headline Line 1", name: "headline1", widget: "string" }
               - { label: "Headline Line 2", name: "headline2", widget: "string" }
               - { label: "Subtext", name: "subtext", widget: "text" }
-              - { label: "Background Image URL", name: "backgroundImage", widget: "string" }
+              - { label: "Background Image", name: "backgroundImage", widget: "image" }
 
           - label: "Story Section"
             name: "story"
@@ -73,7 +73,7 @@ collections:
               - { label: "Title Line 1", name: "title1", widget: "string" }
               - { label: "Title Line 2", name: "title2", widget: "string" }
               - { label: "Story Body", name: "body", widget: "text" }
-              - { label: "Story Image URL", name: "image", widget: "string" }
+              - { label: "Story Image", name: "image", widget: "image" }
               - { label: "Story Image Alt Text", name: "imageAlt", widget: "string" }
 
           - label: "About Us Content"
