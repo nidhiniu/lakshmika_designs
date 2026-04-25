@@ -6,6 +6,8 @@ backend:
   auth_endpoint: api/auth
   open_authoring: true
 
+publish_mode: editorial_workflow
+
 media_folder: "public/uploads"
 public_folder: "/uploads"
 
@@ -41,6 +43,7 @@ collections:
               - { label: "Price Label", name: "priceLabel", widget: "string", required: false }
               - { label: "Show in New Arrivals", name: "isNewArrival", widget: "boolean", default: false }
               - { label: "Show in Offers / Sale", name: "isOnSale", widget: "boolean", default: false }
+
       - name: "site-settings"
         label: "Site Settings"
         file: "public/data/site-settings.json"
@@ -55,6 +58,7 @@ collections:
               - { label: "WhatsApp Number (country code + number)", name: "whatsappNumber", widget: "string" }
               - { label: "Instagram Handle (without @)", name: "instagramHandle", widget: "string" }
               - { label: "Email", name: "email", widget: "string", required: false }
+
           - label: "Hero Section"
             name: "hero"
             widget: "object"
@@ -64,6 +68,7 @@ collections:
               - { label: "Headline Line 2", name: "headline2", widget: "string" }
               - { label: "Subtext", name: "subtext", widget: "text" }
               - { label: "Background Image URL", name: "backgroundImage", widget: "string" }
+
           - label: "Story Section"
             name: "story"
             widget: "object"
@@ -73,6 +78,7 @@ collections:
               - { label: "Story Body", name: "body", widget: "text" }
               - { label: "Story Image URL", name: "image", widget: "string" }
               - { label: "Story Image Alt Text", name: "imageAlt", widget: "string" }
+
           - label: "About Us Content"
             name: "about"
             widget: "object"
