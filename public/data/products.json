@@ -8,24 +8,6 @@
       "category": "Sarees",
       "image": "https://photos.google.com/photo/AF1QipPehzw6Z-tOReVpzAL86UbMO3uy8AnKoNXsE_x7",
       "priceLabel": "350000"
-    },
-    {
-      "id": "p-3",
-      "name": "Embroidered Anarkali Set",
-      "category": "Dresses",
-      "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuDMO4kC0s6Szi5EyAnDcPTyXIY14zDpdWxHXNxECxrmruHIRjz6lpTURB2A8EHC3leFqrt--8EShirdNiN6OycYu00H5c-aB5utxDp0tvDQBAVR-epoklUxGcNgp2Jxk-Ceq-zuYWeM85V0XKNxOMedIVVjfXdZJVeJ39U7zTifWUyOYsAECVCp7kjJaFF3ZsKG-wz5LvrPuayRe9is9aGWlOLobDGRXoZsYj0H6cLvx0mKoAyzLRdn27WnGhNBFrbX4wdyYH9t6",
-      "priceLabel": "INR 4,950",
-      "isNewArrival": false,
-      "isOnSale": true
-    },
-    {
-      "isNewArrival": true,
-      "isOnSale": true,
-      "image": "/uploads/pexels-sargaraj-tr-423973759-31280628.jpg",
-      "id": "2",
-      "name": "saree",
-      "category": "Sarees",
-      "priceLabel": "2444"
     }
   ]
 }
