@@ -1,15 +1,6 @@
 {
   "products": [
     {
-      "id": "p-1",
-      "name": "Temple Gold Choker",
-      "category": "Jewellery",
-      "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuBrdLUna85P8ze-yk8K7ep5PaC5BiNMRrE3yC0E-LM53JgXszD-gJ7X7oRJOz_D4keJS8QYPqW4c7f2uz66ib9WtmqhT82pdWiXkqzCuu5tZIgYUciMqPgfaAdFHfAGgDc7dO28OExAsgBXflHPYDVU6N0UZ6tLsl_vNJKcUyNO2oG0MSr6FgS8YsFvSJIsS0iFBPW0nD0ERCYSvSX18yRpHJOhyvMjmmg-_dtC-3IWSQYh-FTxQraCvsIVfftIIh2RpIwwwcni5tPs",
-      "priceLabel": "INR 6,500",
-      "isNewArrival": true,
-      "isOnSale": false
-    },
-    {
       "id": "p-2",
       "name": "Kanchipuram Bridal Saree",
       "category": "Sarees",
@@ -26,6 +17,15 @@
       "priceLabel": "INR 4,950",
       "isNewArrival": false,
       "isOnSale": true
+    },
+    {
+      "isNewArrival": true,
+      "isOnSale": true,
+      "id": "1",
+      "name": "saree",
+      "category": "Sarees",
+      "image": "https://photos.google.com/photo/AF1QipPlnHqMnNHy-CEt-MS1IGNlhzSxhAD14Bc1-6M1",
+      "priceLabel": "350000"
     }
   ]
 }
