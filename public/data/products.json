@@ -1,13 +1,13 @@
 {
   "products": [
     {
-      "id": "p-2",
-      "name": "Kanchipuram Bridal Saree",
-      "category": "Sarees",
-      "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuDSINIcf1tOODiSdJo3K7rInObrcQka9_Po4G7UXnM3pSaQ3j-ByOALUxenBidgTnD0-hMNDPQgrt06Egk5CqXSq7lEM-BqbjmBTRo50VX3-u5uZ1vTPeoM_CryYSyN4DqI98MYbg5Ctzszs8MBCOT_CZQNMmPV5_3PYd6XROgy_Mt5DsgStzP6sQq92sXQEQHr3GTCv_wYBbo7vxy4FhzEcllVxca8qac4P05aCBxoteqOdE7neZBo6ZhVADjAXO9_unQD4noaD8Fh",
-      "priceLabel": "INR 18,900",
       "isNewArrival": true,
-      "isOnSale": true
+      "isOnSale": true,
+      "id": "1",
+      "name": "saree",
+      "category": "Sarees",
+      "image": "https://photos.google.com/photo/AF1QipPehzw6Z-tOReVpzAL86UbMO3uy8AnKoNXsE_x7",
+      "priceLabel": "350000"
     },
     {
       "id": "p-3",
@@ -21,11 +21,11 @@
     {
       "isNewArrival": true,
       "isOnSale": true,
-      "id": "1",
+      "image": "/uploads/pexels-sargaraj-tr-423973759-31280628.jpg",
+      "id": "2",
       "name": "saree",
       "category": "Sarees",
-      "image": "https://photos.google.com/photo/AF1QipPehzw6Z-tOReVpzAL86UbMO3uy8AnKoNXsE_x7",
-      "priceLabel": "350000"
+      "priceLabel": "2444"
     }
   ]
 }
