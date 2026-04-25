@@ -4,9 +4,6 @@ backend:
   branch: main
   base_url: https://friendly-gingersnap-a594db.netlify.app
   auth_endpoint: api/auth
-  open_authoring: true
-
-publish_mode: editorial_workflow
 
 media_folder: "public/uploads"
 public_folder: "/uploads"
