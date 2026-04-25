@@ -1,3 +1,31 @@
 {
-  "products": []
+  "products": [
+    {
+      "isNewArrival": true,
+      "isOnSale": true,
+      "id": "2",
+      "name": "jewel",
+      "category": "Jewellery",
+      "image": "/uploads/pexels-galt-couture-2159829575-36536856.jpg",
+      "priceLabel": "25000"
+    },
+    {
+      "isNewArrival": true,
+      "isOnSale": true,
+      "id": "1",
+      "name": "saree",
+      "category": "Sarees",
+      "image": "/uploads/pexels-skgphotography-19955775.jpg",
+      "priceLabel": "2500"
+    },
+    {
+      "isNewArrival": false,
+      "isOnSale": false,
+      "id": "3",
+      "category": "Jewellery",
+      "name": "bangles",
+      "image": "/uploads/pexels-kunal-lakhotia-781256899-32988532.jpg",
+      "priceLabel": "1000"
+    }
+  ]
 }
