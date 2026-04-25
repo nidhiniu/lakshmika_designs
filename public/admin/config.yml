@@ -2,15 +2,15 @@ backend:
   name: github
   repo: nidhiniu/lakshmika_designs
   branch: main
-  base_url: https://YOUR-NETLIFY-SITE.netlify.app
+  base_url: https://friendly-gingersnap-a594db.netlify.app
   auth_endpoint: api/auth
   open_authoring: true
 
 media_folder: "public/uploads"
 public_folder: "/uploads"
 
-site_url: "/"
-display_url: "/"
+site_url: "https://friendly-gingersnap-a594db.netlify.app"
+display_url: "https://friendly-gingersnap-a594db.netlify.app"
 
 collections:
   - name: "shop"
