@@ -7,7 +7,7 @@
       "category": "Jewellery",
       "name": "Celestial Apple Pendent",
       "image": "/uploads/1.jpeg",
-      "priceLabel": "299 + shipping"
+      "priceLabel": "299 + Shipping"
     },
     {
       "isNewArrival": true,
@@ -16,7 +16,7 @@
       "category": "Jewellery",
       "image": "/uploads/2.jpeg",
       "name": "Twin Astral Pendant",
-      "priceLabel": "299 + shipping"
+      "priceLabel": "299 + Shipping"
     },
     {
       "isNewArrival": true,
@@ -24,8 +24,197 @@
       "id": "3",
       "category": "Jewellery",
       "image": "/uploads/3.jpeg",
-      "priceLabel": "299 + shipping",
+      "priceLabel": "299 + Shipping",
       "name": "Boundless Love Pendant"
+    },
+    {
+      "isNewArrival": true,
+      "isOnSale": false,
+      "id": "4",
+      "category": "Jewellery",
+      "priceLabel": "299 + Shipping",
+      "name": "Timeless Infinity Pendant",
+      "image": "/uploads/4.jpeg"
+    },
+    {
+      "isNewArrival": true,
+      "isOnSale": false,
+      "id": "5",
+      "category": "Jewellery",
+      "image": "/uploads/5.jpeg",
+      "name": "Infinite Path Necklace",
+      "priceLabel": "299 + Shipping"
+    },
+    {
+      "isNewArrival": true,
+      "isOnSale": false,
+      "id": "6",
+      "category": "Jewellery",
+      "image": "/uploads/6.jpeg",
+      "name": "Infinite Love Pendant",
+      "priceLabel": "299 + Shipping"
+    },
+    {
+      "isNewArrival": true,
+      "isOnSale": false,
+      "id": "7",
+      "category": "Jewellery",
+      "priceLabel": "299 + Shipping",
+      "image": "/uploads/7.jpeg",
+      "name": "Golden Blossom"
+    },
+    {
+      "isNewArrival": true,
+      "isOnSale": false,
+      "id": "8",
+      "category": "Jewellery",
+      "image": "/uploads/8.jpeg",
+      "priceLabel": "299 + Shipping",
+      "name": "Trinity Heart "
+    },
+    {
+      "isNewArrival": true,
+      "isOnSale": false,
+      "id": "9",
+      "name": "radiant Monarch",
+      "category": "Jewellery",
+      "image": "/uploads/9.jpeg",
+      "priceLabel": "299 + Shipping"
+    },
+    {
+      "isNewArrival": true,
+      "isOnSale": false,
+      "id": "10",
+      "category": "Jewellery",
+      "image": "/uploads/10.jpeg",
+      "name": "Rose Heart",
+      "priceLabel": "299 + Shipping"
+    },
+    {
+      "isNewArrival": true,
+      "isOnSale": false,
+      "id": "11",
+      "category": "Jewellery",
+      "priceLabel": "299 + Shipping",
+      "image": "/uploads/11.jpeg",
+      "name": "Solis Starburst"
+    },
+    {
+      "isNewArrival": true,
+      "isOnSale": false,
+      "id": "12",
+      "category": "Jewellery",
+      "image": "/uploads/12.jpeg",
+      "name": "Rose Mandala",
+      "priceLabel": "299 + Shipping"
+    },
+    {
+      "isNewArrival": true,
+      "isOnSale": false,
+      "id": "13",
+      "name": "Radiant Heart",
+      "category": "Jewellery",
+      "image": "/uploads/13.jpeg",
+      "priceLabel": "299 + Shipping"
+    },
+    {
+      "isNewArrival": true,
+      "isOnSale": false,
+      "id": "14",
+      "category": "Jewellery",
+      "image": "/uploads/14.jpeg",
+      "priceLabel": "299 + Shipping",
+      "name": "Crest Medallion"
+    },
+    {
+      "isNewArrival": true,
+      "isOnSale": false,
+      "id": "15",
+      "category": "Jewellery",
+      "priceLabel": "299 + Shipping",
+      "image": "/uploads/15.jpeg",
+      "name": "Emerald Solis"
+    },
+    {
+      "isNewArrival": true,
+      "isOnSale": false,
+      "priceLabel": "299 + Shipping",
+      "image": "/uploads/16.jpeg",
+      "id": "16",
+      "name": "Cherry Harvest",
+      "category": "Jewellery"
+    },
+    {
+      "isNewArrival": true,
+      "isOnSale": false,
+      "id": "17",
+      "priceLabel": "299 + Shipping",
+      "image": "/uploads/17.jpeg",
+      "category": "Jewellery",
+      "name": "Prism Drop"
+    },
+    {
+      "isNewArrival": true,
+      "isOnSale": false,
+      "id": "18",
+      "priceLabel": "299 + Shipping",
+      "category": "Jewellery",
+      "image": "/uploads/18.jpeg",
+      "name": "Clover Cascade"
+    },
+    {
+      "isNewArrival": true,
+      "isOnSale": false,
+      "id": "19",
+      "priceLabel": "299 + Shipping",
+      "image": "/uploads/19.jpeg",
+      "category": "Jewellery",
+      "name": "Laurel Cascade"
+    },
+    {
+      "isNewArrival": true,
+      "isOnSale": false,
+      "id": "20",
+      "category": "Jewellery",
+      "image": "/uploads/20.jpeg",
+      "priceLabel": "299 + Shipping",
+      "name": "Pearl Bow"
+    },
+    {
+      "isNewArrival": true,
+      "isOnSale": false,
+      "id": "21",
+      "category": "Jewellery",
+      "image": "/uploads/21.jpeg",
+      "priceLabel": "299 + Shipping",
+      "name": "Eternity Strand"
+    },
+    {
+      "isNewArrival": true,
+      "isOnSale": false,
+      "id": "22",
+      "priceLabel": "299 + Shipping",
+      "image": "/uploads/22.jpeg",
+      "name": "Papillon Drop",
+      "category": "Jewellery"
+    },
+    {
+      "isNewArrival": true,
+      "isOnSale": false,
+      "id": "23",
+      "priceLabel": "299 + Shipping",
+      "image": "/uploads/23.jpeg",
+      "category": "Jewellery",
+      "name": "Emerald Heart"
+    },
+    {
+      "isNewArrival": true,
+      "isOnSale": false,
+      "priceLabel": "299 + Shipping",
+      "id": "24",
+      "name": "Clover Solitaire",
+      "category": "Jewellery",
+      "image": "/uploads/24.jpeg"
     }
   ]
 }
