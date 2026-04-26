@@ -2,30 +2,30 @@
   "products": [
     {
       "isNewArrival": true,
-      "isOnSale": true,
-      "id": "2",
-      "name": "jewel",
+      "isOnSale": false,
+      "id": "1",
       "category": "Jewellery",
-      "image": "/uploads/pexels-galt-couture-2159829575-36536856.jpg",
-      "priceLabel": "25000"
+      "name": "Celestial Apple Pendent",
+      "image": "/uploads/1.jpeg",
+      "priceLabel": "299 + shipping"
     },
     {
       "isNewArrival": true,
-      "isOnSale": true,
-      "id": "1",
-      "name": "saree",
-      "category": "Sarees",
-      "image": "/uploads/pexels-skgphotography-19955775.jpg",
-      "priceLabel": "2500"
+      "isOnSale": false,
+      "id": "2",
+      "category": "Jewellery",
+      "image": "/uploads/2.jpeg",
+      "name": "Twin Astral Pendant",
+      "priceLabel": "299 + shipping"
     },
     {
-      "isNewArrival": false,
+      "isNewArrival": true,
       "isOnSale": false,
       "id": "3",
       "category": "Jewellery",
-      "name": "bangles",
-      "image": "/uploads/pexels-kunal-lakhotia-781256899-32988532.jpg",
-      "priceLabel": "1000"
+      "image": "/uploads/3.jpeg",
+      "priceLabel": "299 + shipping",
+      "name": "Boundless Love Pendant"
     }
   ]
 }
