@@ -3,6 +3,69 @@
     {
       "isNewArrival": true,
       "isOnSale": false,
+      "id": "18",
+      "priceLabel": "299 + Shipping",
+      "category": "Jewellery",
+      "image": "/uploads/18.jpeg",
+      "name": "Clover Cascade"
+    },
+    {
+      "isNewArrival": true,
+      "isOnSale": false,
+      "id": "19",
+      "priceLabel": "299 + Shipping",
+      "image": "/uploads/19.jpeg",
+      "category": "Jewellery",
+      "name": "Laurel Cascade"
+    },
+    {
+      "isNewArrival": true,
+      "isOnSale": false,
+      "id": "20",
+      "category": "Jewellery",
+      "image": "/uploads/20.jpeg",
+      "priceLabel": "299 + Shipping",
+      "name": "Pearl Bow"
+    },
+    {
+      "isNewArrival": true,
+      "isOnSale": false,
+      "id": "21",
+      "category": "Jewellery",
+      "image": "/uploads/21.jpeg",
+      "priceLabel": "299 + Shipping",
+      "name": "Eternity Strand"
+    },
+    {
+      "isNewArrival": true,
+      "isOnSale": false,
+      "id": "22",
+      "priceLabel": "299 + Shipping",
+      "image": "/uploads/22.jpeg",
+      "name": "Papillon Drop",
+      "category": "Jewellery"
+    },
+    {
+      "isNewArrival": true,
+      "isOnSale": false,
+      "id": "23",
+      "priceLabel": "299 + Shipping",
+      "image": "/uploads/23.jpeg",
+      "category": "Jewellery",
+      "name": "Emerald Heart"
+    },
+    {
+      "isNewArrival": true,
+      "isOnSale": false,
+      "priceLabel": "299 + Shipping",
+      "id": "24",
+      "name": "Clover Solitaire",
+      "category": "Jewellery",
+      "image": "/uploads/24.jpeg"
+    },
+    {
+      "isNewArrival": true,
+      "isOnSale": false,
       "id": "1",
       "category": "Jewellery",
       "name": "Celestial Apple Pendent",
@@ -152,69 +215,6 @@
       "image": "/uploads/17.jpeg",
       "category": "Jewellery",
       "name": "Prism Drop"
-    },
-    {
-      "isNewArrival": true,
-      "isOnSale": false,
-      "id": "18",
-      "priceLabel": "299 + Shipping",
-      "category": "Jewellery",
-      "image": "/uploads/18.jpeg",
-      "name": "Clover Cascade"
-    },
-    {
-      "isNewArrival": true,
-      "isOnSale": false,
-      "id": "19",
-      "priceLabel": "299 + Shipping",
-      "image": "/uploads/19.jpeg",
-      "category": "Jewellery",
-      "name": "Laurel Cascade"
-    },
-    {
-      "isNewArrival": true,
-      "isOnSale": false,
-      "id": "20",
-      "category": "Jewellery",
-      "image": "/uploads/20.jpeg",
-      "priceLabel": "299 + Shipping",
-      "name": "Pearl Bow"
-    },
-    {
-      "isNewArrival": true,
-      "isOnSale": false,
-      "id": "21",
-      "category": "Jewellery",
-      "image": "/uploads/21.jpeg",
-      "priceLabel": "299 + Shipping",
-      "name": "Eternity Strand"
-    },
-    {
-      "isNewArrival": true,
-      "isOnSale": false,
-      "id": "22",
-      "priceLabel": "299 + Shipping",
-      "image": "/uploads/22.jpeg",
-      "name": "Papillon Drop",
-      "category": "Jewellery"
-    },
-    {
-      "isNewArrival": true,
-      "isOnSale": false,
-      "id": "23",
-      "priceLabel": "299 + Shipping",
-      "image": "/uploads/23.jpeg",
-      "category": "Jewellery",
-      "name": "Emerald Heart"
-    },
-    {
-      "isNewArrival": true,
-      "isOnSale": false,
-      "priceLabel": "299 + Shipping",
-      "id": "24",
-      "name": "Clover Solitaire",
-      "category": "Jewellery",
-      "image": "/uploads/24.jpeg"
     }
   ]
 }
