@@ -2,7 +2,7 @@ import { brand as defaultBrand } from "../data/siteContent";
 
 export default function Contact({ brand = defaultBrand }) {
   const whatsappUrl = `https://wa.me/${brand.whatsappNumber}?text=Hi%20Lakshmika%20Designs!%20I%20am%20interested%20in%20your%20collection.`;
-  const instagramUrl = `https://instagram.com/${brand.instagramHandle}`;
+  const instagramUrl = brand.instagramUrl || `https://instagram.com/${brand.instagramHandle}`;
 
   return (
     <section

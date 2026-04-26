@@ -84,7 +84,7 @@ export default function Hero({ brand = defaultBrand, hero = defaultHero }) {
 
         <div className="flex flex-col sm:flex-row gap-4">
           <a
-            href="#collections"
+            href="/collections"
             className="group bg-[#2D2926] text-white px-10 py-5 flex items-center justify-center gap-4 hover:bg-[#C5A07F] transition-all duration-300"
           >
             <span className="text-sm font-medium uppercase tracking-widest">
@@ -108,7 +108,7 @@ export default function Hero({ brand = defaultBrand, hero = defaultHero }) {
       </div>
 
       {/* Scroll hint */}
-      <div className="absolute bottom-6 right-8 z-10 flex flex-col items-center gap-2 opacity-60">
+      <div className="hidden md:flex absolute bottom-6 right-8 z-10 flex-col items-center gap-2 opacity-60">
         <span className="text-[10px] uppercase tracking-widest rotate-90 origin-center">
           Scroll
         </span>

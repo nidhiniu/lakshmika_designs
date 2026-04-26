@@ -54,6 +54,7 @@ collections:
               - { label: "Tagline", name: "tagline", widget: "string" }
               - { label: "WhatsApp Number (country code + number)", name: "whatsappNumber", widget: "string" }
               - { label: "Instagram Handle (without @)", name: "instagramHandle", widget: "string" }
+              - { label: "Instagram Profile URL", name: "instagramUrl", widget: "string", required: false }
               - { label: "Email", name: "email", widget: "string", required: false }
 
           - label: "Hero Section"

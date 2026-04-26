@@ -3,10 +3,10 @@ import PageLayout from "./components/PageLayout";
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import Collections from "./components/Collections";
-import Story from "./components/Story";
 import Testimonials from "./components/Testimonials";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
+import FloatingWhatsApp from "./components/FloatingWhatsApp";
 import CollectionsPage from "./pages/CollectionsPage";
 import NewArrivalsPage from "./pages/NewArrivalsPage";
 import OffersPage from "./pages/OffersPage";
@@ -65,8 +65,7 @@ export default function App() {
     <div className="antialiased" style={{ backgroundColor: "#F9F5F0", color: "#2D2926" }}>
       <Navbar brand={settings.brand} />
       <Hero brand={settings.brand} hero={settings.hero} />
-      <Collections />
-      <Story story={settings.story} />
+      <Collections products={products} />
       <Testimonials />
       <Contact brand={settings.brand} />
       <Footer brand={settings.brand} />
@@ -96,14 +95,22 @@ export default function App() {
   }, [path, products, homePage, activeCategory, settings]);
 
   if (path === "/") {
-    return page;
+    return (
+      <>
+        {page}
+        <FloatingWhatsApp whatsappNumber={settings.brand.whatsappNumber} />
+      </>
+    );
   }
 
   return (
-    <div className="antialiased">
-      <PageLayout activePath={path} onNavigate={navigate} brand={settings.brand}>
-        {page}
-      </PageLayout>
-    </div>
+    <>
+      <div className="antialiased">
+        <PageLayout activePath={path} onNavigate={navigate} brand={settings.brand}>
+          {page}
+        </PageLayout>
+      </div>
+      <FloatingWhatsApp whatsappNumber={settings.brand.whatsappNumber} />
+    </>
   );
 }

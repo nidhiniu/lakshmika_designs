@@ -7,8 +7,9 @@
 export const brand = {
   name: "Lakshmika",
   tagline: "Designs",
-  whatsappNumber: "919876543210", // Replace with actual number (country code + number, no +)
+  whatsappNumber: "7306879117", // Replace with actual number (country code + number, no +)
   instagramHandle: "lakshmika.designs",
+  instagramUrl: "https://www.instagram.com/lakshmika_designs?igsh=Z3FjeTZvMWRqcnM5",
   email: "hello@lakshmika.in",
 };
 
@@ -133,10 +134,10 @@ export const testimonials = [
 export const footer = {
   tagline: "Celebrating the essence of modern womanhood through curated luxury.",
   navigation: [
-    { label: "Collections", href: "#collections" },
-    { label: "New Arrivals", href: "#collections" },
+    { label: "Collections", href: "/collections" },
+    { label: "New Arrivals", href: "/new-arrivals" },
     { label: "Bespoke Orders", href: "#contact" },
-    { label: "About Us", href: "#story" },
+    { label: "About Us", href: "/about" },
   ],
   support: [
     { label: "Shipping Info", href: "#contact" },

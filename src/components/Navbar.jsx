@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import { brand as defaultBrand } from "../data/siteContent";
+import headerLogo from "../../favicon-64x64.png";
 
 export default function Navbar({ brand = defaultBrand }) {
   const [scrolled, setScrolled] = useState(false);
@@ -11,7 +12,13 @@ export default function Navbar({ brand = defaultBrand }) {
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
 
-  const whatsappUrl = `https://wa.me/${brand.whatsappNumber}?text=Hi%20Lakshmika%20Designs!%20I%20am%20interested%20in%20your%20collection.`;
+  const mobileMenuLinks = [
+    { label: "Collections", href: "/collections" },
+    { label: "New Arrivals", href: "/new-arrivals" },
+    { label: "Offers / Sale", href: "/offers" },
+    { label: "About Us", href: "/about" },
+    { label: "Contact", href: "#contact" },
+  ];
 
   return (
     <>
@@ -20,36 +27,35 @@ export default function Navbar({ brand = defaultBrand }) {
           scrolled ? "bg-white shadow-sm" : "bg-white/10 backdrop-blur-sm"
         }`}
       >
-        <a href="#" className="flex flex-col">
+        <a href="#" className="flex items-center gap-2 sm:gap-3 min-w-0">
+          <img src={headerLogo} alt={`${brand.name} logo`} className="h-10 sm:h-12 w-auto object-contain" />
           <span
-            className="text-2xl md:text-3xl leading-none"
+            className="whitespace-nowrap text-lg sm:text-xl md:text-2xl leading-none"
             style={{ fontFamily: "'Cormorant Garamond', serif" }}
           >
-            {brand.name}
-          </span>
-          <span
-            className="text-[10px] uppercase font-medium tracking-[0.2em]"
-            style={{ color: "#C5A07F" }}
-          >
-            {brand.tagline}
+            {`${brand.name} ${brand.tagline}`}
           </span>
         </a>
 
-        <div className="flex items-center gap-4">
-          <a
-            href={whatsappUrl}
-            target="_blank"
-            rel="noreferrer"
-            className="hidden md:flex items-center gap-2 bg-[#2D2926] text-white px-6 py-2.5 text-sm font-medium hover:bg-[#C5A07F] transition-all duration-300"
-          >
-            <svg className="w-4 h-4 fill-current" viewBox="0 0 24 24">
-              <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
-            </svg>
-            Order on WhatsApp
+        <nav className="hidden md:flex items-center gap-6">
+          <a href="/collections" className="text-sm uppercase tracking-widest hover:text-[#C5A07F] transition-colors">
+            Collections
           </a>
+          <a href="/new-arrivals" className="text-sm uppercase tracking-widest hover:text-[#C5A07F] transition-colors">
+            New Arrivals
+          </a>
+          <a href="/offers" className="text-sm uppercase tracking-widest hover:text-[#C5A07F] transition-colors">
+            Offers / Sale
+          </a>
+          <a href="/about" className="text-sm uppercase tracking-widest hover:text-[#C5A07F] transition-colors">
+            About Us
+          </a>
+        </nav>
+
+        <div className="flex items-center gap-4">
           <button
             onClick={() => setMenuOpen(!menuOpen)}
-            className="p-2 text-2xl"
+            className="p-2 text-2xl md:hidden"
             aria-label="Menu"
           >
             <span className="material-symbols-outlined text-3xl">
@@ -59,28 +65,21 @@ export default function Navbar({ brand = defaultBrand }) {
         </div>
       </nav>
 
-      {/* Mobile / Full Menu Overlay */}
+      {/* Mobile Menu */}
       {menuOpen && (
-        <div className="fixed inset-0 z-40 bg-[#F9F5F0] flex flex-col items-center justify-center gap-8">
-          {["Collections", "New Arrivals", "Our Story", "Contact"].map((item) => (
-            <a
-              key={item}
-              href={`#${item.toLowerCase().replace(" ", "-")}`}
-              onClick={() => setMenuOpen(false)}
-              className="text-5xl md:text-6xl hover:text-[#C5A07F] transition-colors duration-200"
-              style={{ fontFamily: "'Cormorant Garamond', serif", fontStyle: "italic" }}
-            >
-              {item}
-            </a>
-          ))}
-          <a
-            href={whatsappUrl}
-            target="_blank"
-            rel="noreferrer"
-            className="mt-8 bg-[#2D2926] text-white px-10 py-4 text-sm font-medium uppercase tracking-widest"
-          >
-            Order on WhatsApp
-          </a>
+        <div className="fixed top-[76px] left-0 right-0 z-40 md:hidden border-t border-[#EDE3D9] bg-white/95 backdrop-blur px-6 pb-4 pt-2 shadow-sm">
+          <div className="flex flex-col gap-3">
+            {mobileMenuLinks.map((item) => (
+              <a
+                key={item.label}
+                href={item.href}
+                onClick={() => setMenuOpen(false)}
+                className="text-sm uppercase tracking-widest text-left hover:text-[#C5A07F] transition-colors"
+              >
+                {item.label}
+              </a>
+            ))}
+          </div>
         </div>
       )}
     </>

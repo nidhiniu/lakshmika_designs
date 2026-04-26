@@ -1,7 +1,52 @@
-import { collections } from "../data/siteContent";
+import { useMemo } from "react";
 
-export default function Collections() {
+const preferredCategories = ["Jewellery", "Sarees", "Dresses"];
+
+function canRenderImage(url) {
+  if (!url || typeof url !== "string") {
+    return false;
+  }
+  const lower = url.toLowerCase();
+  return lower.startsWith("http") && !lower.includes("photos.google.com");
+}
+
+export default function Collections({ products = [] }) {
   const allCollectionsUrl = "/collections";
+  const displayItems = useMemo(() => {
+    const categoryCards = preferredCategories
+      .map((category) => {
+        const match = products.find(
+          (product) => product.category === category && canRenderImage(product.image)
+        );
+        if (!match) {
+          return null;
+        }
+        return {
+          key: `${category}-${match.id}`,
+          category,
+          image: match.image,
+          title: match.name,
+          subtitle: category,
+          offset: category === "Sarees",
+        };
+      })
+      .filter(Boolean);
+
+    const usedIds = new Set(categoryCards.map((item) => item.key.split("-").slice(1).join("-")));
+    const additionalCards = products
+      .filter((product) => canRenderImage(product.image) && !usedIds.has(product.id))
+      .slice(0, Math.max(0, 3 - categoryCards.length))
+      .map((product) => ({
+        key: product.id,
+        category: product.category,
+        image: product.image,
+        title: product.name,
+        subtitle: product.category,
+        offset: false,
+      }));
+
+    return [...categoryCards, ...additionalCards].slice(0, 3);
+  }, [products]);
 
   return (
     <section id="collections" className="py-24 px-6 md:px-12 bg-white">
@@ -25,16 +70,16 @@ export default function Collections() {
 
         {/* Grid */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          {collections.map((item) => (
+          {displayItems.map((item) => (
             <a
-              key={item.id}
+              key={item.key}
               href={`${allCollectionsUrl}?category=${encodeURIComponent(item.category)}`}
               className={`group cursor-pointer block ${item.offset ? "md:mt-12" : ""}`}
             >
               <div className="relative aspect-[3/4] overflow-hidden mb-4">
                 <img
                   src={item.image}
-                  alt={item.alt}
+                  alt={item.title}
                   className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                 />
                 {/* hover overlay */}

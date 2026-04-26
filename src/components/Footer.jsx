@@ -3,7 +3,7 @@ import { brand as defaultBrand, footer } from "../data/siteContent";
 export default function Footer({ brand = defaultBrand }) {
   const year = new Date().getFullYear();
   const whatsappUrl = `https://wa.me/${brand.whatsappNumber}`;
-  const instagramUrl = `https://instagram.com/${brand.instagramHandle}`;
+  const instagramUrl = brand.instagramUrl || `https://instagram.com/${brand.instagramHandle}`;
 
   return (
     <footer className="bg-white pt-20 pb-10 px-6 md:px-12 border-t border-gray-100">
@@ -65,31 +65,6 @@ export default function Footer({ brand = defaultBrand }) {
           </ul>
         </div>
 
-        {/* Newsletter */}
-        <div>
-          <h4 className="text-xs font-semibold uppercase tracking-widest mb-6">
-            Newsletter
-          </h4>
-          <p className="text-sm text-gray-500 mb-4">
-            Join our inner circle for exclusive previews.
-          </p>
-          <div
-            className="flex border-b pb-2"
-            style={{ borderColor: "#2D2926" }}
-          >
-            <input
-              type="email"
-              placeholder="Email Address"
-              className="bg-transparent border-none text-sm w-full focus:ring-0 focus:outline-none placeholder:text-gray-400"
-            />
-            <button
-              className="material-symbols-outlined text-lg hover:text-[#C5A07F] transition-colors"
-              aria-label="Subscribe"
-            >
-              arrow_forward
-            </button>
-          </div>
-        </div>
       </div>
 
       {/* Bottom bar */}
