@@ -215,6 +215,33 @@
       "image": "/uploads/17.jpeg",
       "category": "Jewellery",
       "name": "Prism Drop"
+    },
+    {
+      "isNewArrival": true,
+      "isOnSale": false,
+      "id": "25",
+      "category": "Jewellery",
+      "image": "/uploads/25.jpeg",
+      "priceLabel": "360 + Shipping",
+      "name": "Tear Drop Gold "
+    },
+    {
+      "isNewArrival": true,
+      "isOnSale": false,
+      "id": "26",
+      "priceLabel": "360 + Shipping",
+      "image": "/uploads/26.jpeg",
+      "name": "Tear Drop Black & White ",
+      "category": "Jewellery"
+    },
+    {
+      "isNewArrival": true,
+      "isOnSale": false,
+      "id": "27",
+      "name": "Tear Drop Pink",
+      "category": "Jewellery",
+      "image": "/uploads/27.jpeg",
+      "priceLabel": "360 + Shipping"
     }
   ]
 }
